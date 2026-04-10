@@ -41,6 +41,10 @@ h1, h2, h3 {
     background-color: #0b0f15;
 }
 
+.bg-darker {
+    background-color: #05070a;
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -341,6 +345,28 @@ h1, h2, h3 {
 .portfolio-item:hover img { transform: scale(1.1); }
 .portfolio-item:hover .portfolio-overlay { opacity: 1; }
 .portfolio-item:hover .portfolio-overlay span { transform: translateY(0); }
+
+/* FAQ */
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.faq-item h4 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.faq-item p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
 
 /* Contact Box */
 .contact-box {
